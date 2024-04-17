@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <base href="../../">
+  <!--<base href="" />-->
+  <title>LEGACY</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="icon" href="assets/img/favicon/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/favicon.png">
+  <!-- Template Basic Images End -->
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+  <link rel="stylesheet" href="assets/css/main.min.css?275d426ad6420ca219ce3b1293f4b1d7">
+  <link href="assets/css/adittional-styles.css?51b95f108dc2eff3111c2a1be9def269" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900" rel="stylesheet" media="all" onload="if(media!='all')media='all'">
+<!--  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">-->
+  <style>.page-frame{position:fixed;z-index:100000}.page-frame:after,.page-frame:before{content:'';position:fixed;z-index:1}#page-frame-lr:after,#page-frame-lr:before{top:0;height:100%;width:25px;background-color:#fff}#page-frame-lr:before{left:0}#page-frame-lr:after{right:0}#page-frame-tb:after,#page-frame-tb:before{left:0;width:100%;height:25px;background-color:#fff}#page-frame-tb:before{top:0}#page-frame-tb:after{bottom:0}.page-transition{position:fixed;z-index:150;left:-50%;right:-50%;background-color:#f5f8f9}.page-transition .line{display:block;height:3px;position:absolute;z-index:1;left:0;right:0;background-color:#666}#page-transition-top{-webkit-transform-origin:bottom center;-ms-transform-origin:bottom center;transform-origin:bottom center;top:-50%;bottom:100%}#page-transition-top .line{bottom:-1px}#page-transition-bottom{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;bottom:-50%;top:100%}#page-transition-bottom .line{top:-1px}#body-animate #page-transition-top{-webkit-transform-origin:bottom center;-ms-transform-origin:bottom center;transform-origin:bottom center;bottom:50%}#body-animate #page-transition-bottom{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;top:50%}.queryloader__overlay{left: 15px !important; width: auto !important; right: 15px !important;}@media (max-width:767.98px){#page-frame-lr:after,#page-frame-lr:before{width:8px}#page-frame-tb:after,#page-frame-tb:before{height:8px}.queryloader__overlay{left: 8px !important; right: 8px !important;}}</style>
+</head>
+<body id="body-animate" class="modx-template-6">
+  <div id="page_wrap" class="webgl-mouse">
+    <!-- page frame -->
+    <div id="page-frame-lr" class="page-frame notactive"></div>
+    <div id="page-frame-tb" class="page-frame"></div>
+    <!-- /page frame -->
+
+    <!-- page transition -->
+    <div id="page-transition-top" class="page-transition"><span class="line"></span></div>
+    <div id="page-transition-bottom" class="page-transition"><span class="line"></span></div>
+    <!-- /page transition -->
+
+    <!-- header -->
+    
+    <header class="header">
+    <div class="container">
+      <div class="container-fluid container-main-abs container-logo">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="header__logo">
+              <a href="../../" class="location-js">
+                 <span class="slideUp">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAVCAYAAACdQqbPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5NzY3MEFBM0VGRDExRThBMTA5QTc2RkU5Mzg0MUVGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY5NzY3MEFCM0VGRDExRThBMTA5QTc2RkU5Mzg0MUVGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Njk3NjcwQTgzRUZEMTFFOEExMDlBNzZGRTkzODQxRUYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Njk3NjcwQTkzRUZEMTFFOEExMDlBNzZGRTkzODQxRUYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4wRt/fAAAFnUlEQVR42tSaa2wVRRTHt7elLbU0FFAhBQW0vvCBog3RxlfFxPjFBl8E5AMaXxi0BNFEEjWiQRGVWDUWP/giIUgCaERjogIVtVK11Wh4FglY8VXRSksft+v/tGfjeDK7O7O793I9yS/t3jszZ2bv2TPnnNk813UnOY5zHBhg9oB+J3flHHAuGAOGgS7wE/gE/JohnWfz3zRIge8yoGM6OAuUgQLQCfaBzaA3wnjn8e/Zx/fpIPgjpA/pd0EeGAG+dGAg37v/lfHAicES0AyaNGwHV0Qcdw5odf3lCNgIpsacv46nhK57Ehx7MdgbsK52sAKMtBz3XjHOvpD2j4r2O0EBfbErYQN5xw2WuZbjlYL1rp08lLCBnCrG35XAmJWgxWJNh8DlljraxRizfdqdrtE3qCvFLtpRXKgb01WmQ74fsBirBHwLrrOcw1LwYoLuf8+gu/1XKsEpMcY7A7TyNmAqJ4KPwfUWfWrF9UqfdrPAfrCDWclb2+Bel7TQ/jzFJ47JBz9bjPUumCg+awLv883qBpPBZeAmUK60uwu0gIaE1rUGTFOuyWhXRBiHHsoPwHDx+Sb+fDs/ZBQPXAnmiHZvsYHtNNDVxLFZNV+PBveB50S7J8Ej2hGEm+sHFRnYw6Nwu8btLQhoXw7WKW3XggsTnM8IkFbG3x1xnGfEmnrBVQHtLwAdSvsGcJKFvslCXw/IM+2fywZyQCzsbsN+r4NZGZrTFjGnMy37jwMDYowag37VYEOMALxB6Fz0fzeQarGgrTlitDeKedVb9r9T9F+TpXkXC719oMikbyoDMQjFARNAhYYJmr3XJLhalSM1mPdEEH9zhNqEKvVZmvdREWNQ7PmYSUfai1qUiVNwdDL4McZkXgHzfLKVPI7C14eM8RqYq1xfAj71KeyMM8iqGg2yK1P5kIPHsLnpZAu4lP//E4yyzOriyl9cAFOzxO6gDpnIYkrZEPJ9vi8yGEPO62+fdo8bpsDk1Q4ntL51wkBmWxhIsVhTNo3Dy+zeVK4fBg+GpVxJy6iQ7022GJkil/m0MylB9yZ8dPASP4mezONStomohj4SFGbZQFZz/cWTB8I8cCY8COXYWwPqICZPW7u4nsL5vJQuzWdH+Afzbv5B/sxGSgKebtrPt4FrFK9wNddswuQbxfvQ+dcMw35JygLe6jyZD5Zk00A2MXFkrXB9tIiXNe0WgycUY+znLaxFMZA2y+pwKwfTfjGLq9k+Zxr+0F+J67pjYCC/iOsTbLeYtHPs5WtRKaQT3GWadnR6u5tPPYkD4FZ+Oj3ZZqG3yhk6KaaYZYwPx2u20Vqh0082Cm9WA24z6EdV4mY2xLhSpvG4/qKpgzg5Qq2mklrPFU1d+0KwTNPH5hT0VTe6zDTUsdCyQnwD/y6eULFuYoz7WiV0PxvUXqa5Luf6XRrvQtfPg49CLHQan4+kNSku8ZlFGv2G5iziNz6zIA/TwWlbJccBFaLtfItDuxSnnqUiS+rkecttZqqog9C2eq2hrib2Vqrs4BR6P2+V48HFztB7IlLoHZ4fInqQKtavxox1ph4kTOoMLPTtkDFuiVneNpXVlnpqRP9Ggz49os9oQ13k1doirInOgqbH9MxWHiRlkJaq0mPQJqzecNTS4umkdrlln+Vcn7CRhZpiXZg0ius7DHUdZq+9wWJ+zZzNfR4zBhmmqVsFprlt3CgsOM03LDYlUQfRZStUoLrfGTq6Hqtp08Ep9FLhQk2EgtKLwO+8nfTwVhsmT/NW421R51vo7OTglgp9i1h/oU9q/IKT3GsL3bxO7zc9FFZqL+KGYVW9FN+4MEOiPfO0gDrIZs424jwBVRxvFHMhjN4x+SJCvUOt7pawdyMD6WNMZLgSYxWIIpqNjGUDK+dx6GGkd2v2JpwhppRqdorvn+9a/xFgAPuMD1wIZt2IAAAAAElFTkSuQmCC" id="glitchLogo" alt="" width="130px" height="20px">
+                  </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-auto header_links">
+              <a href="https://t.me/vlegacy" target="_blank"><span class="slideUp">telegram</span></a>
+              <span class="slideUp">behance</span><
+              <a href="https://instagram.com/v.skrin/" target="_blank"><span class="slideUp">instagram</span></a>
+          </div>
+          <div class="col-auto">
+              <span class="slideUp">
+            <button class="header__bar">
+              <span><b></b></span>
+              <span><b></b></span>
+              <span><b></b></span>
+            </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </header>
+<section class="s-work">
+<div class="container">
+    <div class="row">
+    <div class="col-12">
+        <div class="breadcrumbs slideUp">
+        <ul class="breadcrumb"><li><a href="../../" class="location-js">Main</a></li>
+<li><a href="works/" class="location-js">Works</a></li>
+<li class="active">mark.space</li></ul>    
+        </div>
+    </div>
+</div>
+    <div class="s-work-bg-img">
+        <div class="s-work-bg-img-wrap" style="background-image: url('assets/img/works/work-bg-1.jpg')" >
+            <!-- <img src="" alt="">-->          
+        </div>
+    </div>
+    <div class="s-work__inner-container">
+    <div class="work__page__header">
+        <h1>mark.space</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi nam tempora veritatis quia neque est ea dolores autem remLorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi nam tempora veritatis quia neque est ea dolores autem rem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi nam tempora veritatis quia neque est ea dolores autem rem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi nam tempora veritatis quia neque est ea dolores autem rem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi nam tempora veritatis quia neque est ea dolores autem rem
+</p>
+    </div>
+    <div class="work__page__info">
+        <div class="row no-gutters">
+            <div class="col-4">
+                <h3>client</h3>
+                <p>Mark Space</p>
+            </div>
+            <div class="col-4">
+                <h3>services</h3>
+                <ul>
+<li>Design</li>
+<li>Design</li>
+<li>Design</li>
+<li>Design</li>
+<li>Design</li>
+</ul>
+            </div>
+            <div class="col-4">
+                <h3>problem & solution</h3>
+                <p>problem & solution problem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solutionproblem & solution</p>
+            </div>
+        </div>
+    </div>
+    <div class="work__page__video">
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+       <div id="work__page__video__player" class="embed-container"></div>
+       <script src="https://player.vimeo.com/api/player.js"></script>
+       <script>
+         var options01 = {
+           id:308077362,
+           width: '100%',
+             portrait: false,
+             title: false,
+             byline: false
+         };   
+         var videoPlayer = new Vimeo.Player('work__page__video__player', options01);      
+         videoPlayer.setVolume(.5);
+                  
+         function playVideo() {
+            videoPlayer.play();
+        }         
+                  
+        function stopVideo() {
+            videoPlayer.unload();
+        }
+       </script>
+    </div>
+    </div>
+    <div class="test" style="height:1500px; width:100%; background:#fff"></div>
+    <div class="next_page">
+        <div class="next_page_center">
+            <div class="next_page_top">
+                <div class="next_page-triangle">
+                    <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="115px" height="100px">
+<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.102" fill="none"
+ d="M57.000,1.909 L1.813,97.090 L112.187,97.090 L57.000,1.909 "/>
+</svg>
+                    <div class="next_page-triangle_text">
+                        <div class="next_page-triangle_text-wrap">
+                        <span class="triangle_text-left">explore next</span>
+                        <a href="" class="triangle_text-a location-js">mark.space</a>
+                        <span class="triangle_text-right">project</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="next_page_bot">
+                <div class="mouse-set">
+                    <div class="mouse-shape">    
+                    </div>
+                </div>
+                <div class="next_page_bot-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="next_page_menu">
+        <a href=""></a>
+<ul  class="menu__list"><li class="nav-item active"><a class="location-js" href="works/mark-space/" ><span>mark.space</span></a></li><li class="nav-item"><a class="location-js" href="works/endo/" ><span>endo</span></a></li><li class="nav-item"><a class="location-js" href="works/re-avto/" ><span>re:avto</span></a></li><li class="nav-item"><a class="location-js" href="works/concept-market/" ><span>concept.market</span></a></li><li class="nav-item"><a class="location-js" href="works/diamco/" ><span>diamco</span></a></li><li class="nav-item"><a class="location-js" href="works/miracletele/" ><span>miracletele</span></a></li><li class="nav-item"><a class="location-js" href="works/cybercube/" ><span>cybercube</span></a></li></ul>
+    </div>
+</div>
+<div class="next_page_wrapp">
+    <span id="next_page_counter">3</span>
+</div>
+</section>
+
+  <div class="menu-transit">
+      <div class="menu-transit-1"><span></span></div>
+      <div class="menu-transit-2"><span></span></div>
+    </div>
+    <div id="menu">
+      <div class="menu__header">
+        <!--<div class="container-fluid container-main-abs">-->
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="menu__logo col-auto">
+                
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 749.02 112.28" class="">
+                <g fill="#111111">
+                  <path  d="M24.85,89.08h40v20h-61V4.08h21Z" />
+                  <path  d="M316.35,52.6v8.11q0,22.49-14.4,36.44c-9.6,9.3-22.05,13.95-37.2,13.95-16.2,0-29.7-5.25-40.35-15.75S208.5,71.8,208.5,56.66c0-15.3,5.25-28.2,15.75-38.85C234.9,7.16,248,1.91,263.55,1.91c19.65,0,36.75,9.6,45.75,24.45l-17.7,10.2h0C286.65,28,275.85,22,263.4,22q-15.07,0-24.75,9.9c-6.45,6.45-9.6,14.7-9.6,24.75,0,9.89,3.3,18.14,9.75,24.59s15.3,9.6,26.1,9.6c16.05,0,26.85-7.5,30.6-19.95H263.7V52.6Z" />
+                  <polygon  points="378.88 70.78 365.5 109 387.85 109 394.15 90.1 436 90.1 442.3 109 464.8 109 427.9 4.01 406.5 4.01 415.15 27.86 429.55 70.75 400.75 70.75 378.88 70.78" />
+                  <path d="M520.9,95.35C510.55,84.85,505.45,72,505.45,56.5S510.55,28,520.9,17.66,544.3,1.91,560.05,1.91c19.05,0,36.15,9.6,45.15,24.75L587.35,37c-5.25-9.45-15.3-15-27.3-15-10.2,0-18.45,3.15-24.75,9.6-6.15,6.45-9.3,14.7-9.3,24.89s3.15,18.3,9.3,24.75c6.3,6.45,14.55,9.6,24.75,9.6,12,0,22.35-5.7,27.3-14.85L605.2,86.35c-9,15.15-26,24.75-45.15,24.75Q536.42,111.1,520.9,95.35Z" />
+                  <path d="M710.75,68.05v41H690.2V68.05L654.35,4h23.4l22.8,43.8Z" />
+                  <polygon points="723.35 4.01 746.75 4.01 737.68 20.4 714.82 20.4 723.35 4.01" />
+                  <rect x="115.13" y="48.2" width="43.5" height="19.8" />
+                  <rect x="115.13" y="6.01" width="43.5" height="19.8" />
+                  <rect x="115.13" y="91.2" width="43.5" height="19.8" />
+                </g>
+              </svg>
+              <
+            </div>
+            <div class="menu__lang">
+                <span>English</span>
+                <span><a href="../../ru/works/mark-space/">Русский</a></span>
+            </div>
+            <a href="#" class="menu__close col-auto">
+                <span class="menu_cross"></span>
+                <div class="click-layer"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menu__wrap">
+        <!--<div class="container-fluid container-main">-->
+        <div class="container">
+          <div class="row no-gutters menu__wrap__inner">
+            <div class="col-12 col-md-auto">
+
+    <ul  class="menu__list"><li class="nav-item active"><a class="location-js" href="works/" ><span data-text="Works">Works</span></a></li><li class="nav-item"><a class="location-js" href="articles/" ><span data-text="Articles">Articles</span></a></li><li class="nav-item"><a class="location-js" href="careers/" ><span data-text="Careers">Careers</span></a></li></ul>
+<!--               <ul class="menu__list">
+                <li><a href="#" class="location-js"><span>Folio</span></a></li>
+<li><a href="#" class="location-js"><span>Careers</span></a></li>
+<li><a href="helloworld" class="location-js"><span>News</span></a></li>
+<li><a href="#" class="location-js"><span>Team</span></a></li>
+<li><a href="#" class="location-js"><span>Connect</span></a></li>
+              </ul> -->
+            </div>
+            <div class="col-12 col-md-5 ml-auto">
+                <div class="menu_contacts row no-gutters">
+                    <div class="menu_contacts_item col-12">
+                        <h4>Call us:</h4>
+                        <p><a href="tel: +38 (073) 777-12-67">+38 (073) 777-12-67</a></p>
+                       <p><a href="tel: +38 (073) 777-12-67">+38 (073) 777-12-67</a>
+                    </div>
+                    <div class="menu_contacts_item col-12">
+                        <h4>Mail us:</h4>
+                        <p><a href="mailto: stasdenysov@gmail.com">stasdenysov@gmail.com</a></p>
+                    </div>
+                    <div class="menu_contacts_item col-12">
+                        <h4>Social:</h4>
+                        <div class="menu_contacts_item_links">                       
+                        <a href="https://t.me/arenort" target="_blank">Telegram</a>
+                        Behance<
+                        <a href="https://instagram.com/dee.stan" target="_blank">Instagram</a></div>
+                    </div>
+                    <div class="menu_contacts_item contacts_item_form col-12">
+                        <h3>Be first, who will get special proposes:</h3>
+                        
+                        <div class="contact_form">
+                            <form action="" id="subscribe-form">
+                            <div class="sub_field"><input ENGINE="text" name="email" type="email" required>
+                            <label for="email">Enter your E-mail</label>
+                            </div>
+                            <button type="submit" class="sub-btn"><span>SUBSCRIBE</span></button>
+                            </form>
+                            <div class="subs-confirm">Confirm subscription at your e-mail</div>
+                        </div>
+                        
+                        <h4>We promise, that you’ll never get spammed</h4>
+                    </div>
+                </div>
+<!--               <div class="menu__contacts">
+  <div class="d-none d-md-block">
+    <p>Russia, Moscow,
+      <br>03155, Warshawskoe 1, d.1</p>
+    <br>
+    <p>
+      <a href="mailto:hello@thelegacy.com.ua">hello@thelegacy.com.ua</a>
+      <br>
+      <a href="tel:+79854154526">+7 (985) 415-45-26</a>
+    </p>
+  </div>
+  <div class="menu__soc-links">
+    <i class="fab fa-telegram-plane"></i><
+    <a href="https://www.behance.net/thelegacy" target="_blank"><i class="fab fa-behance"></i></a>
+    <a href="https://www.instagram.com/thelegacy.agency/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</div> -->
+            </div>
+            <div class="menu__label">MENU</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /menu -->
+<!--<a href="" class="contact_btn slideUp"><span ></span></a>-->
+<a href="" class="contact_btn slideUp"><span >Contact us here</span></a>
+<div class="contact-line">
+    <div class="container">
+       <a href="#" class="contactUs__inner"><i class="fas fa-comments"></i></a>  
+    </div>
+</div>
+    <!-- contact form -->
+    <div class="contactForm">
+      <div class="contactForm__wrap">
+        <div class="contactForm__header">
+          <div class="container-fluid">
+            <div class="row justify-content-between">
+              <div class="col-lg-4 col-12">
+                <div class="logo"><img src="assets/img/logo.svg" alt=""></div>
+              </div>
+              <div class="col-lg-8 col-12">
+                <div class="row  align-items-center justify-content-between">
+                    <div class="contactForm__contacts">
+                        <a href="tel:+7 (985) 415-45-26">+7 (985) 415-45-26</a>
+                        <a href="tel:+38 (063) 296-95-97">+38 (063) 296-95-97</a>
+                        <a href="mailto:viktor@thelegacy.agency">viktor@thelegacy.agency</a>
+                    </div>
+                    <a href="#" class="menu__close">
+                        <span class="menu_cross"></span>
+                        <div class="click-layer"></div>
+                    </a>
+                </div>
+                <!-- <div class="close"> -->
+                  <!-- <span>BACK</span>
+                  <svg viewBox="0 0 22 22">
+                    <g fill="#fff">
+                      <path d="M0 0h2v2H0zM2 2h2v2H2zM4 4h2v2H4zM6 6h2v2H6zM8 8h2v2H8zM10 10h2v2h-2zM12 12h2v2h-2zM14 14h2v2h-2zM16 16h2v2h-2zM18 18h2v2h-2zM20 20h2v2h-2z"></path>
+                      <path transform="rotate(90 21 1)" d="M20 0h2v2h-2z"></path>
+                      <path transform="rotate(90 19 3)" d="M18 2h2v2h-2z"></path>
+                      <path transform="rotate(90 17 5)" d="M16 4h2v2h-2z"></path>
+                      <path transform="rotate(90 15 7)" d="M14 6h2v2h-2z"></path>
+                      <path transform="rotate(90 13 9)" d="M12 8h2v2h-2z"></path>
+                      <path transform="rotate(90 9 13)" d="M8 12h2v2H8z"></path>
+                      <path transform="rotate(90 7 15)" d="M6 14h2v2H6z"></path>
+                      <path transform="rotate(90 5 17)" d="M4 16h2v2H4z"></path>
+                      <path transform="rotate(90 3 19)" d="M2 18h2v2H2z"></path>
+                      <path transform="rotate(90 1 21)" d="M0 20h2v2H0z"></path>
+                      </g>
+                  </svg> -->
+                <!--</div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm__main">
+            <form id="form-contact" class="contactForm__main">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 col-12 contactForm__aside">
+                <h2>CONTACT FORM:</h2>  
+                <p>Press <span>Tab</span> to go to the next field.</p>
+                <ul class="contactForm__required"></ul>
+              </div>
+              <div class="col-lg-8 col-12 contactForm__form">
+                <p>Bonjour! My name is <span class="input"><span class="input-hide">Your name</span>
+                  <input ENGINE="text" name="contact-company" placeholder="name of your company" class="input-txt validate-field"><span class="input-bar"></span></span>, I’m looking for
+                  <select class="select" name="contact-service">
+                    <option value="0">New Website</option>
+                    <option value="1">Re-design current website</option>
+                    <option value="2">Awesome branding</option>
+                    <option value="3">Mobile application</option>
+                    <option value="4">Desktop application</option>
+                  </select>. I’d love to disscuss project via E-mail 
+                  <span class="input"><span class="input-hide">your email</span><input type="text" placeholder="your email" name="contact-email" class="input-txt validate-field"><span class="input-bar"></span></span>
+                  </p>
+                  <!-- <select class="select" name="contact-type">
+                    <option value="0">Branding</option>
+                    <option value="1">Website</option>
+                    <option value="2">mobile application</option>
+                    <option value="3">desktop application</option>
+                  </select>  -->
+                  
+                <!-- <p>We’d love to schedule a call and chat about the scope of our project. You can email us at <span class="input"><span class="input-hide">your email</span>
+                  <input type="text" placeholder="your email" name="contact-email" class="input-txt validate-field"><span class="input-bar"></span></span>.</p>
+                <p>Sincerely, <span class="input"><span class="input-hide">Your name</span>
+                  <input type="text" placeholder="Your name" class="input-txt validate-field" name="contact-name"><span class="input-bar"></span></span>.</p> -->
+                <div class="contactForm__confirm">
+                  <input type="checkbox" id="contactForm__confirm-checkbox" class="validate-field" name="contact-disclaimer">
+                  <label for="contactForm__confirm-checkbox"><span></span>I understand and agree, that my budget is much higher, then $1000</label>
+                </div>
+                <!-- <button class="contactForm__submit" type="button">Send Request</button> -->
+                <button class="projects_btn contactForm__submit" type="button">
+                  
+                      <svg class="bracket" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.5 21.5"><defs>
+                      <style>
+                        .projects_btn .cls-1{fill:none;stroke:#f2f2f2;stroke-linecap:square;stroke-miterlimit:10;}
+                        .projects_btn .cls-2{fill:none;stroke-linecap:square;stroke-miterlimit:10;}
+                      </style></defs>
+                      <polyline class="cls-1" points="0.5 21.5 0.5 0.5 179 0.5 179 21.5"/>
+                      <polyline class="cls-2" points="0.5 21.5 0.5 0.5 179 0.5 179 21.5"/>
+                      </svg>
+                      <span>Send Request</span>
+                      <svg class="bracket_reverse" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.5 21.5"><defs>
+                      </defs>
+                      <polyline class="cls-1" points="0.5 21.5 0.5 0.5 179 0.5 179 21.5"/>
+                      <polyline class="cls-2" points="0.5 21.5 0.5 0.5 179 0.5 179 21.5"/>
+                      </svg>
+                  <
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+<span class="play-cursor play-cursor__container">
+    <span class="play-cursor play-cursor__inner"></span>
+    <span class="play-cursor play-cursor__border"><span class="play-cursor-click"><span class="pulse-click"></span></span></span>
+</span>
+
+</div>
+
+
+<canvas class="grain"></canvas>
+
+  <!-- popap -->
+
+  <!-- /popap -->
+  <!--<script src=""></script>-->
+  <script src="assets/js/scripts.min.js?ca6114c93467016d8c7483e12114272c"></script>
+  <script src="assets/js/custom.js?bbf180a28bbe2e33c3822032d1feb830"></script>
+  
+
+</body>
+
+</html>

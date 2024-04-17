@@ -1,0 +1,720 @@
+@media screen and (max-width: 1160px) {
+    .descMenu {
+        display: none;
+    }
+
+    .window {
+        display: block;
+    }
+
+    .newsTitle {
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    .information {
+        margin-right: 30px;
+    }
+
+    .chooseContentBlock {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .flexButton {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .choose_text {
+        margin: 20px auto 0 auto;
+    }
+
+    canvas {
+        max-width: 100% !important;
+    }
+
+    .plexus {
+        top: 0px !important;
+    }
+
+
+    .flexButton-firstRow {
+        justify-content: center;
+    }
+
+    .flexButton-secondRow {
+        justify-content: center;
+    }
+
+    .metatrader4, .metatraderIOS {
+        margin-right: 0px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 970px) {
+    .newsImgBlock {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .img1news {
+        margin-bottom: 40px;
+    }
+
+    .contactsFooter {
+        border-bottom: 0px;
+    }
+
+    .flexFooterBlock {
+        border-bottom: 1px solid white;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    /*.easyTrading-TextBlock {*/
+        /*max-width: 600px;*/
+    /*}*/
+
+    .contactsFooter {
+        flex-direction: column;
+    }
+
+    .choose_text {
+        max-width: 602px;
+    }
+
+    .contactsFooterEmail, .location {
+        margin-top: 40px;
+    }
+
+    .footerTextBlock2 {
+        display: block;
+        display: flex;
+    }
+
+    .footerTextBlock {
+        display: none;
+    }
+
+    .information2 {
+        width: 49%;
+        display: inline-block;
+    }
+
+    .disclaimer2 {
+        width: 49%;
+        display: inline-block;
+    }
+
+    .footerNavMenu {
+        width: 50%;
+    }
+
+    .footerContentBlock {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .copyRightBlock {
+        flex-direction: column;
+    }
+
+    .riskLinkTerms a {
+        margin-left: 0px;
+    }
+
+    .riskLink {
+        margin-top: 20px;
+    }
+
+    .downloadDocFlex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .title_class, .dot {
+        font-size: 53px;
+        line-height: 72px;
+    }
+
+    .who_text {
+        max-width: 329px;
+    }
+
+    .howToStart_elemText {
+        max-width: 231px;
+    }
+
+    .chooseButtons {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .who_listNum {
+        font-size: 42px;
+        line-height: 51px;
+    }
+
+    .easyTrading-smTitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .easyTrading {
+        margin-bottom: 70px;
+    }
+
+    .downloadDoc_title {
+        margin-bottom: 100px;
+    }
+
+    .title_class, .dot {
+        font-size: 46px;
+        line-height: 66px;
+    }
+
+    .who_listNum_four {
+        margin-top: 0px;
+    }
+
+    .nice_div2 {
+        margin-top: 60px;
+    }
+
+    .formFullName, .formEmail {
+        width: 239px;
+    }
+
+    .formMessage {
+        width: 508px;
+    }
+
+    .who_list_1 {
+        margin-left: 0px;
+    }
+
+    .who_listSecond {
+        margin-left: 100px;
+    }
+
+    .who-img-first {
+        margin-left: 100px;
+    }
+
+    .whoTitle {
+        margin-right: 30px;
+    }
+
+    .howToStart_elemTitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .howToStart_elemText {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .who_listText {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .questions_title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .counter_block {
+        width: 50%;
+    }
+
+    .howToStart_title {
+        max-width: 576px;
+    }
+
+    .counter_block_first {
+        margin-bottom: 70px;
+    }
+
+    .choosePlatform-signature {
+        max-width: 307px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .downloadDoc_firstBlockList li {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .footerTextBlock2 {
+        flex-direction: column;
+    }
+
+    .disclaimer2 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .title_class, .dot {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .risksLinks {
+        flex-direction: column;
+    }
+
+    .risksLinks a {
+        margin-left: 0px;
+    }
+
+    .copyRightBlock {
+        margin-top: 40px;
+    }
+
+    .chooseButtons {
+        width: 260px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .title_class, .dot {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .easyTradingTitle {
+        text-align: left;
+    }
+
+    .who_listSecond {
+        margin-left: 20px;
+    }
+
+    .who-img-first {
+        margin-left: 20px;
+    }
+
+    .who_text {
+        max-width: 244px;
+    }
+
+    .easyTradingFlex {
+        flex-direction: column;
+    }
+
+    .easyTrading-TextBlock {
+        margin-top: 20px;
+    }
+
+    .chooseButtons {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .title_class, .dot {
+        font-size: 30px;
+        line-height: 47px;
+    }
+
+    .formFullName, .formEmail {
+        width: 200px;
+    }
+
+    .formMessage {
+        width: 430px;
+    }
+
+    .chooseButtons {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .plexus {
+        display: none;
+    }
+
+    .mainSection {
+        margin-top: 30px;
+        margin-bottom: 400px;
+    }
+
+    .mainSignature {
+        max-width: 268px;
+    }
+
+    .downloadDoc_title {
+        margin-bottom: 38px;
+    }
+
+    .getStartedButton {
+        margin: 0;
+    }
+
+    .main-container {
+        padding: 0px 20px;
+    }
+
+    .downloadDoc_firstBlockList li {
+        font-size: 15px;
+        line-height: 14px;
+    }
+
+    .howToStartImgBlock {
+        width: 100%;
+    }
+
+    .main-logo {
+        width: 130px;
+    }
+
+    .howToStartImg {
+        display: none;
+    }
+
+    .howToStartImg2 {
+        display: block;
+        width: 100%;
+    }
+
+    .easyTradingTitle {
+        margin-bottom: 74px;
+    }
+
+
+
+    .title_class, .dot {
+        font-size: 27px;
+        line-height: 44px;
+        text-align: left;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .header-mob-lang {
+        left: 20px;
+    }
+
+    .smallSection {
+        padding: 0 20px;
+    }
+
+    .flex-mob-wrapper {
+        padding: 30px 20px;
+    }
+
+    .plexus {
+        top: 240px;
+    }
+
+    .easyTrading {
+        margin-top: 80px;
+    }
+
+    .whoTitle {
+        line-height: 36px
+    }
+
+    .text_class {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .howToStart_elemText {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .questions_title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .question_text {
+        font-size: 14px;
+        line-height: 24px;
+        opacity: 0.6;
+    }
+
+    .counters_block {
+        flex-direction: column;
+    }
+
+    .counter_block {
+        margin-bottom: 50px;
+    }
+
+    .whyBestSection {
+        margin-bottom: 0px;
+    }
+
+    .howToStartSection {
+        padding-top: 20px;
+    }
+
+    .howToStart_contentBlock {
+        margin-top: 30px;
+    }
+
+    .howToStartImgBlock {
+        margin-right: 0px;
+    }
+
+    .choosePlatformSection {
+        padding-top: 90px;
+    }
+
+    .choosePlatform-signature {
+        margin-left: 0px;
+    }
+
+    .choosePlatformSection {
+        padding-bottom: 90px;
+    }
+
+    .whoSection {
+        padding-top: 70px;
+    }
+
+    .who_firstContent {
+        flex-direction: column;
+    }
+
+    .who_text {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        max-width: 393px;
+    }
+
+    .nice_div {
+        flex-direction: column-reverse;
+    }
+
+    .nice_div2 {
+        flex-direction: column;
+    }
+
+    .who-img-first {
+        width: 75%;
+        margin-left: 95px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    .who-img-second {
+        width: 75%;
+        margin-left: 95px;
+        margin-bottom: 50px;
+    }
+
+    .who_listSecond {
+        margin-left: 0px;
+    }
+
+    .questions_mainBlock {
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    .first_question {
+        margin-top: 60px;
+    }
+
+    .takeItEasySection {
+        padding-top: 80px;
+    }
+
+    .actualNews {
+        margin-top: 70px;
+    }
+
+    .newsTitle {
+        max-width: 280px;
+    }
+
+    .holder {
+        margin-bottom: 25px;
+    }
+
+    .newsImgBlock {
+        margin-bottom: 0px;
+    }
+
+    .actualNews {
+        margin-bottom: 70px;
+    }
+
+    .flex-form {
+        flex-direction: column;
+    }
+
+    .formFullName, .formEmail {
+        width: 100%;
+    }
+
+    .formEmail {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .formMessageBlock, .formMessage {
+        width: 100%;
+    }
+
+    .contactSubmitButton {
+        margin: 70px 0 0 0 ;
+    }
+
+    .contactSection {
+        padding-bottom: 70px;
+    }
+
+    .footerNavMenu {
+        display: none;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .flexFooterBlock {
+        border: none;
+    }
+
+    .information2 {
+        width: 100%;
+    }
+
+    .disclaimer2 {
+        width: 100%;
+    }
+
+    .flexButton-firstRow, .flexButton-secondRow {
+        flex-direction: column;
+    }
+
+    .chooseButtons {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .choose-platformSection {
+        margin-top: 27px;
+        margin-bottom: 40px;
+    }
+
+    .plexus {
+        top: 600px !important;
+    }
+
+    .mainSection {
+        padding-bottom: 40px;
+        margin-bottom: 0px;
+    }
+
+    .whyBestSection {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .howToStartSection {
+        padding-top: 30px;
+    }
+
+    .howToStart_contentBlock {
+        margin-bottom: 0px;
+    }
+
+    .whoSection {
+        padding-top: 40px;
+    }
+
+    .who_listElem {
+        margin-bottom: 40px;
+    }
+
+    .questions_mainBlock {
+        margin-bottom: 40px;
+    }
+
+    .takeItEasySection, .contactSection, .choosePlatformSection {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .actualNews {
+        margin-top: 40px;
+    }
+
+    .news {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .downloadDocFlex {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .heightBlock {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .choosePlatformButton, .takeItEasyButton, .contactSubmitButton {
+        width: 78%;
+        margin: 50px auto 0 auto;
+    }
+
+    .window .header {
+        position: fixed;
+        background: #0F0F0F;
+    }
+
+    .contactTitle {
+        margin-bottom: 40px;
+    }
+
+    .chooseButtons {
+        margin-bottom: 0px;
+    }
+
+    .chooseButtonsLink {
+        margin-bottom: 16px;
+    }
+
+    .questionPlatformBlock {
+        padding-top: 20px;
+    }
+
+    .downloadDoc_firstBlockList li {
+        margin-bottom: 30px;
+    }
+
+    .downloadDoc_firstBlockList li a {
+        line-height: 20px;
+    }
+}
