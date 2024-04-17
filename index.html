@@ -14,15 +14,6 @@
     <script src="js/jquery.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var cookieConsentBanner = document.getElementById("cookie-consent-banner");
-            var cookieConsent = getCookie("cookieConsent");
-
-            if (cookieConsent === "accepted") {
-                cookieConsentBanner.remove();
-                document.body.style.overflowY = "scroll";
-            }
-        });
 
         function getCookie(name) {
             var nameEQ = name + "=";
@@ -38,6 +29,17 @@
             }
             return null;
         }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var cookieConsentBanner = document.getElementById("cookie-consent-banner");
+            var cookieConsent = getCookie("cookieConsent");
+
+            if (cookieConsent === "accepted") {
+                cookieConsentBanner.remove();
+                document.body.style.overflowY = "scroll";
+            }
+        });
+
 
     </script>
 </head>
@@ -140,7 +142,7 @@
                 <li class="menu-item lang menu-item-pink"><a href="#" key="login"><font
                         style="vertical-align: inherit;"><font style="vertical-align: inherit;">Iniciar
                     sesión</font></font></a></li>
-                <li class="menu-item lang menu-item-pink"><a href="#" key="registration"><font
+                <li class="menu-item lang menu-item-pink"><a href="./cabinet" key="registration"><font
                         style="vertical-align: inherit;"><font style="vertical-align: inherit;">Registrate gratis</font></font></a>
                 </li>
                 <li class="menu-item translate lang ruLang header-mob-lang" id="es"><font
@@ -657,7 +659,7 @@
                     <a class="footer-link lang footer-input-sign" href="#" key="login"><font
                             style="vertical-align: inherit;"><font style="vertical-align: inherit;">Iniciar
                         sesión</font></font></a>
-                    <a class="footer-link lang footer-input-sign" href="#" key="registration"><font
+                    <a class="footer-link lang footer-input-sign" href="./cabinet" key="registration"><font
                             style="vertical-align: inherit;"><font style="vertical-align: inherit;">Registrate
                         gratis</font></font></a>
                     <span class="header-lang lang translate ruLang" id="es"><font style="vertical-align: inherit;"><font
