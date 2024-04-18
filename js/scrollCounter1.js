@@ -1,4 +1,4 @@
-// Scroll Counter
+
 
 var number1= document.querySelector('.number1'),
     numberTop = number1.getBoundingClientRect().top,
@@ -33,7 +33,7 @@ window.addEventListener('scroll', function onScroll() {
     }
 });
 
-let number3 = document.querySelector('.number3'),
+var number3 = document.querySelector('.number3'),
     start3 = +number3.innerHTML,
     end3 = +number3.dataset.max;
 
